@@ -158,7 +158,7 @@
         /* ===== HERO ===== */
         #hero {
             min-height: 100vh;
-            background: var(--navy);
+            background: url('HeroImage2.jpg') left/cover no-repeat;
             position: relative;
             display: flex;
             align-items: center;
