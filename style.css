@@ -1117,10 +1117,10 @@
             background: rgba(0, 0, 0, 0.85);
             z-index: 2000;
             display: none;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
             padding: 40px 20px;
-            overflow-y: auto;
+            overflow: hidden;
             backdrop-filter: blur(8px);
         }
 
@@ -1132,8 +1132,11 @@
             background: var(--white);
             max-width: 900px;
             width: 100%;
+            max-height: 90vh;
             border-radius: 4px;
-            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
             position: relative;
             animation: modalIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
@@ -2043,6 +2046,17 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            /* ===== MODAL — TABLET ===== */
+            .modal-overlay {
+                padding: 24px;
+                align-items: center;
+            }
+
+            .modal {
+                max-width: 640px;
+                max-height: 85vh;
+            }
+
             /* Hero bg: centralizado à direita em tablet */
             #hero {
                 background-position: right center;
@@ -2152,29 +2166,69 @@
                 padding: 32px 24px;
             }
 
+            /* ===== MODAL — MOBILE ===== */
+            .modal-overlay {
+                padding: 0;
+                align-items: flex-end;
+            }
+
             .modal {
-                margin: 16px;
-                max-height: calc(100vh - 32px);
+                width: 100%;
+                max-width: 100%;
+                max-height: 92vh;
+                border-radius: 16px 16px 0 0;
+                margin: 0;
             }
 
             .modal-header {
-                padding: 32px 24px 24px;
+                padding: 28px 20px 20px;
+                position: sticky;
+                top: 0;
+                z-index: 5;
+                background: var(--navy);
+            }
+
+            .modal-close {
+                top: 16px;
+                right: 16px;
+            }
+
+            .modal-title {
+                font-size: 22px;
+            }
+
+            .modal-subtitle {
+                font-size: 13px;
             }
 
             .modal-body {
-                padding: 24px;
+                padding: 20px;
                 grid-template-columns: 1fr;
+                gap: 24px;
             }
 
             .modal-cta-bar {
                 flex-direction: column;
                 gap: 16px;
-                padding: 24px;
+                padding: 20px;
                 text-align: center;
+                position: sticky;
+                bottom: 0;
+                background: var(--cream);
             }
 
             .modal-stats {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .modal-faq-title {
+                font-size: 19px;
+            }
+
+            .modal-faq-question {
+                font-size: 13px;
+                padding: 16px 0;
             }
 
             .footer-inner {
@@ -2217,8 +2271,67 @@
                 font-size: 12px;
             }
 
+            /* ===== MODAL — SMALL MOBILE ===== */
+            .modal {
+                max-height: 94vh;
+                border-radius: 12px 12px 0 0;
+            }
+
+            .modal-header {
+                padding: 24px 16px 16px;
+            }
+
+            .modal-tag {
+                font-size: 10px;
+            }
+
+            .modal-title {
+                font-size: 19px;
+                line-height: 1.25;
+            }
+
+            .modal-subtitle {
+                font-size: 12px;
+                line-height: 1.6;
+            }
+
+            .modal-close {
+                width: 34px;
+                height: 34px;
+                top: 14px;
+                right: 14px;
+            }
+
+            .modal-body {
+                padding: 16px;
+                gap: 20px;
+            }
+
             .modal-stats {
                 grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .modal-stat-value {
+                font-size: 18px;
+            }
+
+            .modal-section h3 {
+                font-size: 16px;
+            }
+
+            .modal-section p,
+            .modal-list li {
+                font-size: 13px;
+            }
+
+            .modal-cta-bar {
+                padding: 16px;
+            }
+
+            .modal-faq-question {
+                font-size: 12.5px;
+                gap: 10px;
             }
 
             .proc-specs {
