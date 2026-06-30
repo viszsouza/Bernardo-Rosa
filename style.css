@@ -1299,6 +1299,83 @@
             line-height: 1.4;
         }
 
+        /* ===== MODAL FAQ ===== */
+        .modal-faq {
+            grid-column: 1 / -1;
+        }
+
+        .modal-faq:empty {
+            display: none;
+        }
+
+        .modal-faq-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 400;
+            color: var(--navy);
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(0, 43, 73, 0.1);
+        }
+
+        .modal-faq-item {
+            border-bottom: 1px solid rgba(0, 43, 73, 0.08);
+        }
+
+        .modal-faq-item:first-of-type {
+            border-top: 1px solid rgba(0, 43, 73, 0.08);
+        }
+
+        .modal-faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 18px 4px;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--navy);
+        }
+
+        .modal-faq-question-icon {
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            transition: var(--transition);
+        }
+
+        .modal-faq-item.open .modal-faq-question-icon {
+            transform: rotate(45deg);
+        }
+
+        .modal-faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+
+        .modal-faq-item.open .modal-faq-answer {
+            max-height: 400px;
+        }
+
+        .modal-faq-answer p {
+            font-size: 13px;
+            font-weight: 300;
+            color: var(--gray-text);
+            line-height: 1.8;
+            padding: 0 4px 18px;
+        }
+
         .modal-cta-bar {
             padding: 32px 60px;
             background: var(--cream);

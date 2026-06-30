@@ -988,6 +988,7 @@
                 <div class="modal-stats" id="modal-stats"></div>
                 <div class="modal-section" id="modal-section-1"></div>
                 <div class="modal-section" id="modal-section-2"></div>
+                <div class="modal-faq" id="modal-faq"></div>
             </div>
             <div class="modal-cta-bar">
                 <div>
@@ -1064,45 +1065,60 @@
         const procedures = {
             hemorroida: {
                 tag: 'Cirurgia a Laser',
-                title: 'Cirurgia de Hemorroida a Laser',
-                subtitle: 'Tratamento definitivo e moderno para hemorroidas internas e externas, com tecnologia laser que elimina a necessidade de grandes incisões e proporciona recuperação mais rápida.',
+                title: 'Cirurgia de Hemorroidas a Laser',
+                subtitle: 'As hemorroidas são dilatações das veias da região anal que podem provocar sangramento, dor, coceira, sensação de peso e exteriorização durante as evacuações. A cirurgia a laser representa uma evolução das técnicas tradicionais, com menor trauma aos tecidos e recuperação mais confortável.',
                 stats: [
                     { value: 'Ambulatorial', label: 'Internação' },
                     { value: 'Reduzida', label: 'Menos dor' },
-                    { value: 'Até 14 dias', label: 'Recuperação' },
+                    { value: '30-60 min', label: 'Duração' },
                     { value: 'Alta', label: 'Eficácia' }
                 ],
                 section1: {
-                    title: 'Como funciona',
-                    content: 'A cirurgia de hemorroida a laser utiliza energia fototérmica para ocluir os vasos que irrigam as hemorroidas internas, causando sua retração gradual sem necessidade de excisão cirúrgica. Para hemorroidas externas, o laser CO2 permite a remoção precisa com mínimo sangramento.',
-                    list: ['Laser diodo de alta precisão', 'Sem grandes incisões', 'Anestesia local ou sedação leve', 'Alta médica no mesmo dia ou seguinte']
+                    title: 'Quando a cirurgia é indicada?',
+                    content: 'A cirurgia costuma ser indicada quando o tratamento clínico deixa de controlar os sintomas ou quando a doença já se encontra em estágio avançado. Cada paciente é avaliado individualmente para definir a melhor técnica cirúrgica.',
+                    list: ['Hemorroidas Grau III', 'Hemorroidas Grau IV', 'Prolapso persistente', 'Sangramento frequente', 'Dor recorrente', 'Tromboses repetidas', 'Falha do tratamento clínico']
                 },
                 section2: {
-                    title: 'Vantagens do Laser',
-                    content: 'Comparado às técnicas cirúrgicas tradicionais (Milligan-Morgan, Ferguson), a cirurgia a laser oferece vantagens significativas que transformam a experiência do paciente.',
-                    list: ['Menor dor pós-operatória', 'Cicatrização mais rápida que técnicas convencionais', 'Mínimo risco de sangramento', 'Retorno gradual às atividades em até 14 dias', 'Menor incidência de complicações', 'Resultado estético superior']
-                }
+                    title: 'Como funciona a cirurgia a laser?',
+                    content: 'A cirurgia utiliza energia laser de alta precisão para tratar o tecido hemorroidário com mínimo trauma. Nas hemorroidas internas, o laser promove retração controlada do tecido, reduzindo o fluxo sanguíneo e favorecendo sua regressão. Quando existem componentes externos ou excesso de pele associado, o laser CO₂ permite tratamento preciso, com excelente controle do sangramento e preservação dos tecidos. O procedimento é realizado com anestesia e, na maioria dos casos, o paciente recebe alta no mesmo dia.',
+                    list: ['Laser de alta precisão', 'Menor agressão aos tecidos', 'Menor sangramento', 'Alta hospitalar no mesmo dia', 'Recuperação mais confortável']
+                },
+                faq: [
+                    { q: 'Toda hemorroida precisa de cirurgia?', a: 'Não. Grande parte dos pacientes melhora apenas com mudanças alimentares, medicamentos ou procedimentos ambulatoriais. A cirurgia é indicada apenas quando realmente necessária.' },
+                    { q: 'A cirurgia a laser dói?', a: 'Todo procedimento cirúrgico apresenta algum desconforto pós-operatório. Entretanto, a cirurgia a laser costuma proporcionar menos dor quando comparada às técnicas tradicionais.' },
+                    { q: 'Quanto tempo dura a cirurgia?', a: 'Em geral, entre 30 e 60 minutos, dependendo do grau da doença e da técnica utilizada.' },
+                    { q: 'Precisa ficar internado?', a: 'Na maioria dos casos não. O procedimento costuma ser realizado em regime ambulatorial, com alta no mesmo dia.' },
+                    { q: 'Quando posso voltar ao trabalho?', a: 'Depende da atividade exercida e da extensão da cirurgia, mas muitos pacientes retornam às atividades em poucos dias.' },
+                    { q: 'O laser substitui todas as cirurgias convencionais?', a: 'Não. Existem situações em que a cirurgia convencional continua sendo a melhor opção. A escolha depende da avaliação realizada pelo especialista.' }
+                ]
             },
             fistula: {
                 tag: 'Cirurgia a Laser · FiLaC®',
-                title: 'Tratamento de Fístula Anal a Laser',
-                subtitle: 'A técnica FiLaC® (Fistula-tract Laser Closure) representa a evolução no tratamento das fístulas anais, preservando completamente o esfíncter anal e eliminando o trajeto fistuloso com energia laser.',
+                title: 'Cirurgia de Fístula Anal a Laser (FiLaC®)',
+                subtitle: 'A fístula anal é uma comunicação anormal entre o canal anal e a pele ao redor do ânus, geralmente surgida após um abscesso anal. A técnica FiLaC® trata determinados tipos de fístulas preservando a musculatura do esfíncter anal, com mínima agressão aos tecidos.',
                 stats: [
-                    { value: 'Alta', label: 'Taxa de cura' },
-                    { value: '0%', label: 'Risco esfíncter' },
+                    { value: 'Preservado', label: 'Esfíncter anal' },
+                    { value: 'Reduzida', label: 'Menos dor' },
                     { value: '1 dia', label: 'Internação' },
-                    { value: 'Até 14 dias', label: 'Recuperação' }
+                    { value: 'Precoce', label: 'Retorno' }
                 ],
                 section1: {
-                    title: 'A Técnica FiLaC®',
-                    content: 'A técnica FiLaC® introduz uma fibra laser no trajeto fistuloso, emitindo energia radial que promove a obliteração do canal por dentro para fora, sem lesão ao esfíncter anal. É a solução ideal para fístulas complexas onde as técnicas tradicionais apresentam risco de incontinência.',
-                    list: ['Preservação total do esfíncter', 'Fibra laser de emissão radial', 'Sem incisões externas significativas', 'Aplicável a fístulas complexas']
+                    title: 'Quando a cirurgia é indicada?',
+                    content: 'A cirurgia costuma ser indicada para pacientes que apresentam saída contínua de secreção, episódios repetidos de abscesso, dor e inflamação recorrentes, fístulas simples ou complexas, ou persistência da doença após tratamento clínico. A escolha da técnica depende da anatomia da fístula e da relação do trajeto com a musculatura do esfíncter anal.',
+                    list: ['Saída contínua de secreção pela região anal', 'Episódios repetidos de abscesso anal', 'Dor e inflamação recorrentes', 'Fístulas simples ou complexas', 'Persistência após tratamento clínico']
                 },
                 section2: {
-                    title: 'Indicações',
-                    content: 'O tratamento a laser é indicado para diferentes tipos de fístulas anais, sendo especialmente vantajoso nos casos onde o risco de lesão esfincteriana é elevado com as técnicas convencionais.',
-                    list: ['Fístulas interesfincteranas', 'Fístulas transesfincteranas simples e complexas', 'Fístulas recorrentes', 'Casos com risco de incontinência', 'Pacientes que preferem técnicas preservadoras']
-                }
+                    title: 'Como funciona a cirurgia a laser (FiLaC®)?',
+                    content: 'Após a identificação completa do trajeto fistuloso, uma fibra de laser é introduzida em seu interior. A energia laser promove o fechamento progressivo da fístula de dentro para fora, preservando os tecidos ao redor e reduzindo a necessidade de cortes amplos na musculatura anal. O objetivo é tratar a doença mantendo a função do esfíncter anal sempre que essa abordagem for adequada.',
+                    list: ['Preservação da musculatura do esfíncter anal', 'Menor agressão aos tecidos', 'Menor dor pós-operatória', 'Pequenas incisões ou ausência de cortes amplos', 'Recuperação mais confortável', 'Retorno precoce às atividades']
+                },
+                faq: [
+                    { q: 'Toda fístula pode ser tratada com laser?', a: 'Não. Existem diferentes tipos de fístulas anais. A indicação da técnica FiLaC® depende da anatomia da fístula e da avaliação realizada pelo coloproctologista.' },
+                    { q: 'A cirurgia a laser causa incontinência?', a: 'Um dos principais objetivos da técnica FiLaC® é preservar a musculatura do esfíncter anal quando essa abordagem é indicada. Entretanto, a escolha do tratamento deve ser individualizada para cada paciente.' },
+                    { q: 'A cirurgia dói?', a: 'Todo procedimento cirúrgico pode causar algum desconforto. Em muitos pacientes, a técnica a laser proporciona uma recuperação mais confortável quando comparada às cirurgias tradicionais.' },
+                    { q: 'A fístula pode voltar?', a: 'Como em qualquer técnica cirúrgica, existe possibilidade de recorrência. O acompanhamento pós-operatório é fundamental para avaliar a cicatrização e reduzir esse risco.' },
+                    { q: 'Precisa de internação?', a: 'Na maioria dos casos, não. O procedimento costuma ser realizado em regime ambulatorial, com alta no mesmo dia.' }
+                ]
             },
             fissura: {
                 tag: 'Cirurgia a Laser · CO2',
@@ -1127,24 +1143,31 @@
             },
             pilonidal: {
                 tag: 'Cirurgia a Laser · SiLaC®',
-                title: 'Cisto Pilonidal a Laser',
-                subtitle: 'A técnica SiLaC® (Sinus-tract Laser Closure) para o tratamento do seio pilonidal crônico, eliminando completamente as cavidades e trajetos com mínima agressão cirúrgica.',
+                title: 'Cirurgia de Cisto Pilonidal a Laser (SiLaC®)',
+                subtitle: 'O cisto pilonidal é uma doença inflamatória que ocorre no sulco entre as nádegas, geralmente causada pela penetração de pelos na pele. A técnica SiLaC® utiliza energia laser para tratar o trajeto da doença com mínima agressão aos tecidos, proporcionando recuperação mais confortável.',
                 stats: [
-                    { value: '90%', label: 'Taxa de cura' },
-                    { value: 'Amb.', label: 'Ambulatorial' },
-                    { value: '3 dias', label: 'Recuperação' },
-                    { value: '-90%', label: 'Menos cicatriz' }
+                    { value: 'Mínima', label: 'Agressão tecidual' },
+                    { value: 'Reduzida', label: 'Menos dor' },
+                    { value: 'Mesmo dia', label: 'Alta hospitalar' },
+                    { value: 'Precoce', label: 'Retorno' }
                 ],
                 section1: {
-                    title: 'SiLaC® no Cisto Pilonidal',
-                    content: 'A técnica SiLaC® aplica laser de diodo pelo interior dos trajetos do seio pilonidal, promovendo obliteração e destruição do epitélio que reveste as cavidades. O resultado é a eliminação definitiva da doença sem as grandes cicatrizes das técnicas abertas.',
-                    list: ['Incisão mínima de acesso (1-2mm)', 'Preservação de pele saudável', 'Sem grande área cruenta', 'Retorno gradual às atividades em até 14 dias']
+                    title: 'Quando a cirurgia é indicada?',
+                    content: 'A cirurgia costuma ser indicada quando existem episódios repetidos de inflamação, dor persistente, saída de secreção, formação de abscessos, orifícios na pele com drenagem contínua ou limitação das atividades diárias. A escolha da técnica depende da extensão da doença e das características de cada paciente.',
+                    list: ['Episódios repetidos de inflamação', 'Dor persistente', 'Saída de secreção', 'Formação de abscessos', 'Orifícios na pele com drenagem contínua', 'Limitação das atividades diárias']
                 },
                 section2: {
-                    title: 'Comparação com técnicas abertas',
-                    content: 'As técnicas abertas tradicionais para o seio pilonidal deixam grandes áreas para cicatrizar por segunda intenção, com recuperação de semanas a meses. O laser muda completamente esse cenário.',
-                    list: ['Cicatrização em dias', 'Sem grande ferida aberta', 'Mínima restrição de atividades', 'Resultado cosmético excelente', 'Menor taxa de recidiva']
-                }
+                    title: 'Como funciona a cirurgia a laser (SiLaC®)?',
+                    content: 'Após a limpeza completa do trajeto fistuloso e retirada dos pelos presentes na cavidade, uma fibra de laser é introduzida no interior do cisto. A energia laser promove o fechamento progressivo da cavidade e do trajeto da doença, preservando ao máximo os tecidos saudáveis ao redor. Por ser uma técnica minimamente invasiva, geralmente não são necessárias grandes incisões ou feridas abertas.',
+                    list: ['Pequena agressão aos tecidos', 'Menor dor pós-operatória', 'Ausência de grandes feridas cirúrgicas em muitos casos', 'Menor sangramento', 'Recuperação mais rápida', 'Excelente resultado estético']
+                },
+                faq: [
+                    { q: 'O cisto pilonidal pode voltar?', a: 'Sim. Como em qualquer técnica cirúrgica, existe possibilidade de recorrência. O seguimento adequado e os cuidados pós-operatórios ajudam a reduzir esse risco.' },
+                    { q: 'A cirurgia a laser dói?', a: 'Todo procedimento cirúrgico pode causar algum desconforto. Entretanto, a técnica minimamente invasiva costuma proporcionar um pós-operatório mais confortável quando comparada às cirurgias abertas tradicionais.' },
+                    { q: 'Precisa ficar internado?', a: 'Na maioria dos casos, não. O procedimento é realizado em regime ambulatorial, com alta no mesmo dia.' },
+                    { q: 'Quando posso voltar ao trabalho?', a: 'O retorno depende da atividade exercida e da recuperação individual, sendo geralmente mais rápido nas técnicas minimamente invasivas.' },
+                    { q: 'Todo paciente pode fazer cirurgia a laser?', a: 'Não. A indicação depende da extensão da doença, da presença de infecção ativa e das características do cisto pilonidal. Durante a consulta é definida a técnica mais adequada para cada caso.' }
+                ]
             },
             plicoma: {
                 tag: 'Laser CO2',
@@ -1170,44 +1193,58 @@
             'cancer-retal': {
                 tag: 'Cirurgia Robótica · Oncologia',
                 title: 'Cirurgia Robótica para Câncer Colorretal',
-                subtitle: 'Tratamento cirúrgico do câncer de cólon e reto com sistema robótico de última geração, oferecendo a maior precisão disponível para ressecções oncológicas com preservação de estruturas nobres.',
+                subtitle: 'Precisão cirúrgica, tecnologia avançada e tratamento minimamente invasivo. A cirurgia robótica permite ao cirurgião realizar procedimentos complexos com visão tridimensional de alta definição, instrumentos articulados e movimentos extremamente precisos, favorecendo uma cirurgia segura e minimamente invasiva.',
                 stats: [
                     { value: '3D', label: 'Visão ampliada' },
-                    { value: '-50%', label: 'Complicações' },
-                    { value: '2-3 dias', label: 'Internação' },
-                    { value: 'Melhores', label: 'Margens oncológicas' }
+                    { value: 'Reduzida', label: 'Perda sanguínea' },
+                    { value: 'Individual.', label: 'Internação' },
+                    { value: 'Precoce', label: 'Retorno' }
                 ],
                 section1: {
-                    title: 'Precisão Robótica em Oncologia',
-                    content: 'O sistema robótico oferece visão tridimensional magnificada até 10 vezes e instrumentos articulados com 7 graus de liberdade, possibilitando dissecções oncológicas precisas na pelve estreita, com preservação dos nervos autonômicos e do esfíncter anal quando possível.',
-                    list: ['Visão 3D magnificada 10x', '7 graus de liberdade dos instrumentos', 'Filtro de tremor das mãos', 'Preservação dos nervos autonômicos']
+                    title: 'Quando a cirurgia robótica é indicada?',
+                    content: 'A cirurgia é uma das principais formas de tratamento do câncer colorretal. Após avaliação clínica, exames de imagem e estadiamento da doença, a cirurgia robótica pode ser indicada para pacientes com câncer de cólon, câncer de reto, tumores em estágios iniciais ou localmente avançados, quando apropriado, e em casos em que a abordagem minimamente invasiva é considerada adequada pela equipe cirúrgica. A definição da melhor técnica depende das características do tumor, da condição clínica do paciente e do planejamento oncológico individualizado.',
+                    list: ['Câncer de cólon', 'Câncer de reto', 'Tumores em estágios iniciais ou localmente avançados', 'Casos adequados à abordagem minimamente invasiva']
                 },
                 section2: {
-                    title: 'Vantagens para o paciente',
-                    content: 'A cirurgia robótica para o câncer colorretal oferece resultados oncológicos equivalentes à cirurgia aberta, com as vantagens da abordagem minimamente invasiva que impactam diretamente na qualidade de vida do paciente durante o tratamento.',
-                    list: ['Menor sangramento transoperatório', 'Retorno mais rápido à quimioterapia', 'Menor taxa de conversão para cirurgia aberta', 'Preservação da função sexual e urinária', 'Cicatriz mínima', 'Recuperação funcional acelerada']
-                }
+                    title: 'Como funciona a cirurgia robótica?',
+                    content: 'A cirurgia é realizada por pequenas incisões, através das quais são introduzidos uma câmera de alta definição e instrumentos robóticos controlados pelo cirurgião. A plataforma robótica oferece visão tridimensional ampliada e movimentos de alta precisão, permitindo uma dissecção delicada dos tecidos, identificação precisa das estruturas anatômicas e realização dos princípios da cirurgia oncológica com segurança. É importante destacar que o robô não realiza a cirurgia de forma autônoma — todos os movimentos são executados e controlados pelo cirurgião durante todo o procedimento.',
+                    list: ['Pequenas incisões', 'Menor trauma cirúrgico', 'Menor perda sanguínea durante a cirurgia', 'Excelente visualização da pelve e estruturas anatômicas', 'Maior precisão nos movimentos cirúrgicos', 'Recuperação mais confortável']
+                },
+                faq: [
+                    { q: 'A cirurgia robótica cura o câncer colorretal?', a: 'A cirurgia é uma das etapas fundamentais do tratamento do câncer colorretal. As chances de cura dependem principalmente do estágio da doença, das características do tumor e do tratamento completo definido pela equipe médica.' },
+                    { q: 'A cirurgia robótica é melhor que a cirurgia aberta?', a: 'Em muitos pacientes, a cirurgia robótica permite uma abordagem minimamente invasiva, com menor trauma cirúrgico e recuperação mais confortável. Entretanto, a melhor técnica deve ser definida individualmente após avaliação especializada.' },
+                    { q: 'O robô realiza a cirurgia sozinho?', a: 'Não. Todo o procedimento é realizado e controlado pelo cirurgião, que utiliza a plataforma robótica como ferramenta para ampliar a precisão dos movimentos.' },
+                    { q: 'Quanto tempo dura a cirurgia?', a: 'O tempo cirúrgico varia conforme a localização e a complexidade do tumor, podendo durar algumas horas.' },
+                    { q: 'Quanto tempo dura a recuperação?', a: 'A recuperação varia de acordo com cada paciente e com a extensão da cirurgia, sendo acompanhada de forma individualizada pela equipe médica.' }
+                ]
             },
             'hernia-inguinal-rob': {
                 tag: 'Cirurgia Robótica · Hérnias',
                 title: 'Cirurgia Robótica de Hérnia Inguinal',
-                subtitle: 'Reparo robótico da hérnia inguinal com posicionamento preciso da tela protética no espaço pré-peritoneal, combinando os benefícios da cirurgia minimamente invasiva com a precisão superior do sistema robótico.',
+                subtitle: 'A cirurgia é o único tratamento definitivo para a hérnia inguinal. Realizada através de pequenas incisões, a plataforma robótica oferece visão tridimensional ampliada e instrumentos articulados que reproduzem os movimentos das mãos com precisão superior.',
                 stats: [
                     { value: '1 dia', label: 'Internação' },
                     { value: 'Reduzida', label: 'Menos dor' },
-                    { value: 'Até 14d', label: 'Retorno' },
-                    { value: 'Baixa', label: 'Recidiva' }
+                    { value: '1-2h', label: 'Duração' },
+                    { value: 'Bilateral', label: 'Mesma abordagem' }
                 ],
                 section1: {
-                    title: 'Técnicas Robóticas modernas e eficientes',
-                    content: 'A abordagem robótica para a hérnia inguinal utiliza a técnica TAPP (Transabdominal Preperitoneal) ou TEP (Total Extraperitoneal) com precisão aumentada, permitindo o posicionamento ideal da tela e o fechamento do peritônio sem tensão.',
-                    list: ['Acesso por 3 incisões de 5-12mm', 'Tela protética de grandes dimensões', 'Fechamento preciso do peritônio', 'Mínima dissecção das estruturas nobres']
+                    title: 'Quando a cirurgia é indicada?',
+                    content: 'A cirurgia é o único tratamento definitivo para a hérnia inguinal. Ela costuma ser indicada para pacientes que apresentam dor ou desconforto na região da virilha, abaulamento (caroço) que aumenta aos esforços, limitação para atividades físicas ou trabalho, hérnias bilaterais, hérnias recidivadas após cirurgia anterior, ou risco de encarceramento ou estrangulamento da hérnia. Após avaliação clínica, é definida a melhor técnica para cada paciente.',
+                    list: ['Dor ou desconforto na região da virilha', 'Abaulamento que aumenta aos esforços', 'Limitação para atividades físicas ou trabalho', 'Hérnias bilaterais', 'Hérnias recidivadas após cirurgia anterior', 'Risco de encarceramento ou estrangulamento']
                 },
                 section2: {
-                    title: 'Recuperação e resultados',
-                    content: 'O reparo robótico da hérnia inguinal oferece excelentes resultados a longo prazo com taxa de recidiva inferior a 1%, combinados com a recuperação rápida da abordagem minimamente invasiva.',
-                    list: ['Alta hospitalar no dia seguinte', 'Retorno gradual às atividades em até 14 dias', 'Esportes e atividades físicas conforme orientação médica', 'Taxa de recidiva muito baixa', 'Mínima dor pós-operatória', 'Sem grandes cicatrizes']
-                }
+                    title: 'Como funciona a cirurgia robótica?',
+                    content: 'A cirurgia é realizada através de pequenas incisões por onde são introduzidos uma câmera de alta definição e instrumentos robóticos controlados pelo cirurgião. A plataforma robótica oferece visão tridimensional ampliada e instrumentos articulados que reproduzem os movimentos das mãos com precisão superior, permitindo uma dissecção delicada dos tecidos e a colocação da tela com excelente qualidade técnica. É importante destacar que o robô não realiza a cirurgia sozinho — todos os movimentos são executados e controlados pelo cirurgião durante todo o procedimento.',
+                    list: ['Pequenas incisões', 'Menor trauma cirúrgico', 'Menor dor pós-operatória em muitos pacientes', 'Recuperação mais confortável', 'Excelente visualização anatômica', 'Possibilidade de tratar hérnias bilaterais pela mesma abordagem']
+                },
+                faq: [
+                    { q: 'A cirurgia robótica é melhor que a laparoscópica?', a: 'Ambas são técnicas minimamente invasivas e apresentam excelentes resultados. A cirurgia robótica oferece vantagens como visão tridimensional e instrumentos articulados, que podem facilitar o tratamento de casos mais complexos. A escolha da técnica depende da avaliação individual de cada paciente.' },
+                    { q: 'A cirurgia robótica dói menos?', a: 'Em muitos pacientes, a menor manipulação dos tecidos contribui para um pós-operatório mais confortável. Entretanto, a intensidade da dor varia de acordo com cada caso.' },
+                    { q: 'A cirurgia robótica utiliza tela?', a: 'Sim. Na maioria das cirurgias de hérnia inguinal é utilizada uma tela cirúrgica para reforçar a parede abdominal e reduzir o risco de recorrência.' },
+                    { q: 'Quanto tempo dura a cirurgia?', a: 'O procedimento costuma durar entre uma e duas horas, dependendo da complexidade da hérnia e da necessidade de tratar um ou ambos os lados.' },
+                    { q: 'Quando posso voltar ao trabalho?', a: 'O retorno às atividades depende do tipo de trabalho realizado e da recuperação individual de cada paciente. Em atividades leves, esse retorno costuma ocorrer em poucos dias, sempre seguindo orientação médica.' }
+                ]
             },
             'hernia-incisional-rob': {
                 tag: 'Cirurgia Robótica · Hérnias Complexas',
@@ -1232,24 +1269,31 @@
             },
             vesicula: {
                 tag: 'Videolaparoscopia · Vesícula',
-                title: 'Colecistectomia Videolaparoscópica',
-                subtitle: 'Retirada da vesícula biliar por videolaparoscopia, o padrão ouro mundial para o tratamento de cálculos biliares, com incisões mínimas, alta no mesmo dia e retorno rápido às atividades.',
+                title: 'Cirurgia da Vesícula por Videolaparoscopia',
+                subtitle: 'Tratamento definitivo da colelitíase (pedras na vesícula) com cirurgia minimamente invasiva. Realizada por pequenas incisões, essa técnica proporciona menor dor pós-operatória, recuperação mais rápida e retorno precoce às atividades habituais.',
                 stats: [
-                    { value: '1 dia', label: 'Alta hospitalar' },
-                    { value: '3-4', label: 'Incisões mínimas' },
-                    { value: 'Até 14d', label: 'Retorno trabalho' },
-                    { value: '30 anos', label: 'Técnica consagrada' }
+                    { value: 'Mesmo dia', label: 'Alta hospitalar' },
+                    { value: 'Pequenas', label: 'Incisões' },
+                    { value: '45-60 min', label: 'Duração' },
+                    { value: 'Precoce', label: 'Retorno' }
                 ],
                 section1: {
-                    title: 'O Procedimento',
-                    content: 'A colecistectomia laparoscópica é realizada através de 3 a 4 incisões de 5 a 12mm, com introdução de câmera de alta definição e instrumentos especializados. A cirurgia tem duração média de 45 a 60 minutos e é realizada sob anestesia geral.',
-                    list: ['3-4 incisões de 5-12mm', 'Câmera Full HD ou 4K', 'Duração: 45-60 minutos', 'Anestesia geral']
+                    title: 'Quando a cirurgia é indicada?',
+                    content: 'A colecistectomia costuma ser indicada para pacientes que apresentam dor causada por cálculos na vesícula, cólica biliar recorrente, inflamação da vesícula (colecistite), pólipos da vesícula com indicação cirúrgica ou outras situações avaliadas individualmente pelo cirurgião. A indicação depende da avaliação clínica, dos exames de imagem e das condições gerais do paciente.',
+                    list: ['Dor causada por cálculos na vesícula', 'Cólica biliar recorrente', 'Inflamação da vesícula (colecistite)', 'Pólipos da vesícula com indicação cirúrgica']
                 },
                 section2: {
-                    title: 'Quando operar?',
-                    content: 'A cirurgia é indicada quando os cálculos biliares causam sintomas, com risco de complicações graves como colecistite aguda, coledocolitíase ou pancreatite biliar.',
-                    list: ['Cólicas biliares recorrentes', 'Colecistite aguda ou crônica', 'Cálculos na vesícula com sintomas', 'Pólipo de vesícula > 10mm', 'Pancreatite biliar prévia']
-                }
+                    title: 'Como é realizada a cirurgia?',
+                    content: 'A cirurgia é realizada por videolaparoscopia, através de pequenas incisões no abdome. Uma câmera de alta definição permite excelente visualização da vesícula, enquanto instrumentos delicados possibilitam sua retirada com mínima agressão aos tecidos. A técnica videolaparoscópica é considerada o padrão de tratamento para a maioria dos pacientes com colelitíase.',
+                    list: ['Pequenas incisões', 'Menor dor pós-operatória', 'Menor trauma cirúrgico', 'Recuperação mais rápida', 'Menor tempo de internação', 'Excelente resultado estético']
+                },
+                faq: [
+                    { q: 'Quem tem pedra na vesícula sempre precisa operar?', a: 'Nem todos os pacientes necessitam cirurgia imediatamente. Entretanto, quando existem sintomas relacionados à colelitíase, a retirada da vesícula costuma ser o tratamento definitivo.' },
+                    { q: 'É possível retirar apenas as pedras?', a: 'Não. O tratamento recomendado consiste na retirada completa da vesícula biliar (colecistectomia), pois retirar apenas os cálculos não impede a formação de novas pedras.' },
+                    { q: 'A cirurgia é muito dolorosa?', a: 'Por ser realizada por videolaparoscopia, a cirurgia costuma proporcionar menor dor e recuperação mais confortável quando comparada à cirurgia aberta.' },
+                    { q: 'Quanto tempo dura a cirurgia?', a: 'Na maioria dos casos, o procedimento dura entre 45 minutos e 1 hora, podendo variar conforme cada paciente.' },
+                    { q: 'Quanto tempo demora para voltar ao trabalho?', a: 'O retorno depende da atividade exercida e da recuperação individual, sendo geralmente mais rápido após a cirurgia laparoscópica.' }
+                ]
             },
             'hernia-inguinal-lap': {
                 tag: 'Videolaparoscopia · Hérnias',
@@ -1324,6 +1368,33 @@
                 `<h3>${p.section2.title}</h3>
     <p>${p.section2.content}</p>
     <ul class="modal-list">${p.section2.list.map(i => `<li>${i}</li>`).join('')}</ul>`;
+
+            const faqContainer = document.getElementById('modal-faq');
+            if (p.faq && p.faq.length) {
+                faqContainer.innerHTML = `<h3 class="modal-faq-title">Perguntas frequentes</h3>` +
+                    p.faq.map((item, idx) => `
+      <div class="modal-faq-item" data-faq-index="${idx}">
+        <button class="modal-faq-question" type="button" aria-expanded="false">
+          <span>${item.q}</span>
+          <span class="modal-faq-question-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="modal-faq-answer">
+          <p>${item.a}</p>
+        </div>
+      </div>`).join('');
+
+                faqContainer.querySelectorAll('.modal-faq-question').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const item = btn.closest('.modal-faq-item');
+                        const isOpen = item.classList.toggle('open');
+                        btn.setAttribute('aria-expanded', isOpen);
+                    });
+                });
+            } else {
+                faqContainer.innerHTML = '';
+            }
 
             document.getElementById('modal-overlay').classList.add('open');
             document.body.style.overflow = 'hidden';
